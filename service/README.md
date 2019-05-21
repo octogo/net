@@ -1,3 +1,5 @@
+[![GoDoc](https://godoc.org/github.com/octogo/net/service?status.svg)](https://godoc.org/github.com/octogo/net/service)
+
 # OctoNetService
 
 A Golang package implementing a simple service-manager.
