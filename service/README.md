@@ -16,7 +16,7 @@ Supported limits are:
 ### Installation
 
 ```bash
-go get github.com/octogo/net/service
+go get github.com/octogo/net
 ```
 
 ### Usage
@@ -25,9 +25,11 @@ go get github.com/octogo/net/service
 import (
     "log"
 
-    "github.com/octogo/net/foo"
+    "github.com/octogo/net"
 )
 
+// handler implements the handler function for new connections.
+// It writes a "hello world" to the client and exits, effectively closing the connection.
 func handler(c net.Conn) error {
     c.Write([]byte("hello world!"))
     return nil
